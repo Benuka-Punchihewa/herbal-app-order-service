@@ -17,7 +17,7 @@ spec:
       containers:
         - name: order
           image: benukapunchihewa/order-service:latest
-          imagePullPolicy: Never
+          imagePullPolicy: Always
           ports:
             - containerPort: 5001
           env:

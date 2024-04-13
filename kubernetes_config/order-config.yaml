@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: order-config
+data:
+  mongo-url: mongodb+srv://benuka1999:iddkSUNa6D1Tjjjh@cluster0.w2owo1e.mongodb.net/order-db?retryWrites=true&w=majority
+  service-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NSb2xlIjoic2VydmljZSIsImlhdCI6MTY4MTE0OTMxMX0.zk0-ODNOz5ugnHkzRSlHcWlx-qPGSvVi7KkKG55bpLs
+  auth-service-base-url: http://auth-service:5001
+  user-service-base-url: http://user-service:5002
+  product-service-base-url: http://product-service:5003

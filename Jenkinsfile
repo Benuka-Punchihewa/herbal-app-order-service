@@ -30,7 +30,7 @@ pipeline {
             agent { label 'zink' }
             steps {
                 script {
-                    withKubeConfig([credentialsId: '68fa5218-2e07-4c4b-8cc6-2d2024ce171a', serverUrl: 'https://104.196.35.11']) {
+                    withKubeConfig([credentialsId: 'google-cloud-service-account', serverUrl: 'https://104.196.35.11']) {
                         dir('kubernetes_config') {
                             sh 'kubectl apply -f order-config.yaml'
                             sh 'kubectl apply -f order.yaml'
